@@ -1,85 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>TV Digital</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TV Digital en Vivo</title>
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial;
-  background: #0a0a0a;
-  color: white;
-}
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-header {
-  background: red;
-  padding: 15px;
-  text-align: center;
-  font-size: 22px;
-  font-weight: bold;
-}
+    body {
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+      text-align: center;
+    }
 
-.live {
-  width: 100%;
-  height: 500px;
-}
+    /* HEADER */
+    header {
+      background: #111;
+      padding: 18px;
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      border-bottom: 2px solid red;
+    }
 
-.news {
-  padding: 15px;
-}
+    /* CONTENEDOR */
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 10px;
+    }
 
-.item {
-  background: #1a1a1a;
-  padding: 10px;
-  margin-top: 10px;
-  border-left: 4px solid red;
-}
-</style>
+    /* VIDEO */
+    .live-box {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(255,0,0,0.3);
+    }
+
+    .live-box iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* ETIQUETA LIVE */
+    .live-tag {
+      margin-top: 10px;
+      display: inline-block;
+      background: red;
+      padding: 6px 12px;
+      font-size: 12px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    /* INFO */
+    .info {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    /* FOOTER */
+    footer {
+      margin-top: 30px;
+      padding: 15px;
+      background: #111;
+      font-size: 12px;
+      color: #777;
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-🔴 TV DIGITAL - EN VIVO
-</header>
+  <header>
+    📺 TV DIGITAL EN VIVO
+  </header>
 
-<!-- VIDEO EN VIVO -->
-<div class="live">
+  <div class="container">
 
-<iframe 
-src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/share/v/1FnsWawLUV/"
-width="100%" 
-height="500"
-style="border:none;overflow:hidden"
-scrolling="no"
-allowfullscreen="true">
-</iframe>
+    <div class="live-box">
 
-</div>
+      <!-- 🔴 REEMPLAZAR ESTE LINK -->
+      <iframe 
+        src="PEGAR_AQUI_TU_LINK_DEL_LIVE"
+        allowfullscreen>
+      </iframe>
 
-<!-- NOTICIAS -->
-<div class="news">
+    </div>
 
-<h2>📰 Noticias</h2>
+    <div class="live-tag">
+      🔴 EN VIVO AHORA
+    </div>
 
-<div class="item">✔ Buenas noticias del día</div>
-<div class="item">✔ Historias que inspiran</div>
-<div class="item">✔ Actualidad</div>
+    <div class="info">
+      Transmisión oficial - TV Digital Online
+    </div>
 
-</div>
+  </div>
+
+  <footer>
+    © 2026 TV Digital - Todos los derechos reservados
+  </footer>
 
 </body>
- <div style="max-width:1000px; margin:auto;">
-  <h2 style="text-align:center;">🔴 EN VIVO</h2>
-
-  <iframe 
-    src="https://player.restream.io/?token=TU_TOKEN_AQUI"
-    width="100%" 
-    height="600" 
-    frameborder="0" 
-    allowfullscreen>
-  </iframe>
-
-</div> 
 </html>
